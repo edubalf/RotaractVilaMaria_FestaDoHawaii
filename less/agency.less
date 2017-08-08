@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url('../img/header-bg.jpg');
+    background-image: url('../img/hawaii.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -197,7 +197,7 @@ header {
 @media(min-width:768px) {
     header {
         .intro-text {
-            padding-top: 300px;
+            padding-top: 200px;
             padding-bottom: 200px;
             .intro-lead-in {
                 .serif-font;
@@ -505,7 +505,26 @@ section {
     }
 }
 
+// Clients Aside
+
+aside.clients {
+    img {
+        margin: 50px auto;
+    }
+}
+
 // Team Section
+
+section#team {
+    background-color: @gray-darker;
+    background-image: url('../img/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    .text-muted {
+        color: lightgray;
+    }
+}
 
 .team-member {
     text-align: center;
@@ -521,66 +540,6 @@ section {
     }
     p {
         margin-top: 0;
-    }
-}
-
-// Clients Aside
-
-aside.clients {
-    img {
-        margin: 50px auto;
-    }
-}
-
-// Contact Section
-
-section#contact {
-    background-color: @gray-darker;
-    background-image: url('../img/map-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    .section-heading {
-        color: white;
-    }
-    .form-group {
-        margin-bottom: 25px;
-        input,
-        textarea {
-            padding: 20px;
-        }
-        input.form-control {
-            height: auto;
-        }
-        textarea.form-control {
-            height: 236px;
-        }
-    }
-    .form-control:focus {
-        border-color: @theme-primary;
-        box-shadow: none;
-    }
-    ::-webkit-input-placeholder {
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    :-ms-input-placeholder {  
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    .text-danger {
-        color: @theme-danger;
     }
 }
 
