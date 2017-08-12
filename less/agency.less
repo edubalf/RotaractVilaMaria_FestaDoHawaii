@@ -170,10 +170,15 @@ header {
     background-image: url('../img/hawaii.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: center center;
+    background-size: 100% 100% !important;
+    height: 600px;
+    padding-top: 260px;
     .background-cover;
     text-align: center;
     color: white;
+    #timer {
+        padding-top: 20px;
+    }
     .intro-text {
         padding-top: 100px;
         padding-bottom: 50px;
@@ -187,7 +192,7 @@ header {
         .intro-heading {
             .heading-font;
             font-weight: 700;
-            font-size: 50px;
+            font-size: 30px;
             line-height: 50px;
             margin-bottom: 25px;
         }
@@ -196,6 +201,8 @@ header {
 
 @media(min-width:768px) {
     header {
+        height: 800px;
+        padding-top: 280px;
         .intro-text {
             padding-top: 200px;
             padding-bottom: 200px;
@@ -238,7 +245,7 @@ section {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 100px 0;
     }
 }
 
@@ -515,7 +522,8 @@ aside.clients {
 
 // Team Section
 
-section#team {
+
+section#map {
     background-color: @gray-darker;
     background-image: url('../img/map-image.png');
     background-position: center;
@@ -694,4 +702,10 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-primary;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        padding-top: 40px;
+    }
 }
