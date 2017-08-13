@@ -51,9 +51,9 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <!--<li>
-                        <a class="page-scroll" href="#evento">O Evento</a>
-                    </li>-->
+                    <li>
+                        <a class="page-scroll" href="#inscricao">Inscreva-se</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#team">Equipe</a>
                     </li>
@@ -69,70 +69,38 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="intro-text">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScPZblB02DcnL4zVJ41e7M4WdN8HkXUPNY8_nA5Icf1-c4wbw/viewform" target="_black" class="page-scroll btn btn-xl">Inscreva-se</a>
-                <div id="timer" class="intro-heading">Baile do Hawaii</div>
-            </div>
-        </div>
+
     </header>
 
     <!-- Services Section -->
-    <!--<section id="evento">
+    <section id="inscricao">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">O Evento</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#historia">História da festa do hawaii</a></li>
-                        <li><a data-toggle="tab" href="#programacao">Programação</a></li>
-                        <li><a data-toggle="tab" href="#rotary">O que é rotary</a></li>
-                        <li><a data-toggle="tab" href="#rotaract">O que é rotaract</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="historia" class="tab-pane fade in active">
-                            <h3>História da festa do hawaii</h3>
-                            <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. In elementis mé pra quem é amistosis
-                                quis leo. Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. In elementis mé pra
-                                quem é amistosis quis leo.</p>
-                        </div>
-                        <div id="programacao" class="tab-pane fade">
-                            <h3>Programação</h3>
-                            <p>
-                                Mussum Ipsum, cacilds vidis litro abertis.
-                            </p>
-                        </div>
-                        <div id="rotary" class="tab-pane fade">
-                            <h3>Rotary</h3>
-                            <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. In elementis mé pra quem é amistosis
-                                quis leo.<br>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. In elementis mé pra
-                                quem é amistosis quis leo.<br>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Não sou faixa preta cumpadi, sou preto inteiris, inteiris.
-                                In elementis mé pra quem é amistosis quis leo.</p>
-                        </div>
-                        <div id="rotaract" class="tab-pane fade">
-                            <h3>Rotaract</h3>
-                            <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. In elementis mé pra quem é amistosis
-                                quis leo.<br>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. In elementis mé pra
-                                quem é amistosis quis leo.<br>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Não sou faixa preta cumpadi, sou preto inteiris, inteiris.
-                                In elementis mé pra quem é amistosis quis leo.</p>
-                        </div>
-                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScPZblB02DcnL4zVJ41e7M4WdN8HkXUPNY8_nA5Icf1-c4wbw/viewform" target="_black" class="page-scroll">
+                        <img id="btn-prancha" onmouseenter="highlight(this)" onmouseleave="unhighlight(this)" src="img/prancha.png">
+                        <script>
+                            function highlight(image) {
+                                image.src = "img/prancha_escura.png"; //Blue Image
+                            }
+
+                            function unhighlight(image) {
+                                image.src = "img/prancha.png"; //Gray Image
+                            }
+                        </script>
+                    </a>
+                    <div id="timer" class="intro-heading"></div>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
     <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Equipe</h2>
-                    <h3 class="section-subheading text-muted">Conheça os companheiros que fazem o evento acontecer</h3>
+                    <br><br><br>
                 </div>
             </div>
             <div class="row">
@@ -140,7 +108,7 @@
                     <div class="team-member">
                         <img src="img/team/ligia.jpg" class="img-responsive img-circle" alt="">
                         <h4>Lígia Guido</h4>
-                        <p class="text-muted">Organização</p>
+                        <p class="text-muted">Coordenadora</p>
                         <ul class="list-inline social-buttons">
                             <li><a target="_blank" href="https://www.facebook.com/ligia.amorimdeguido"><i class="fa fa-facebook"></i></a>
                             </li>
@@ -151,7 +119,7 @@
                     <div class="team-member">
                         <img src="img/team/leo.jpg" class="img-responsive img-circle" alt="">
                         <h4>Leonardo Santos</h4>
-                        <p class="text-muted">Organização</p>
+                        <p class="text-muted">Coordenador</p>
                         <ul class="list-inline social-buttons">
                             <li><a target="_blank" href="https://www.facebook.com/leonardo.santos.395"><i class="fa fa-facebook"></i></a>
                             </li>
@@ -162,7 +130,7 @@
                     <div class="team-member">
                         <img src="img/team/ju.jpg" class="img-responsive img-circle" alt="">
                         <h4>Juliana Arbulu</h4>
-                        <p class="text-muted">Organização</p>
+                        <p class="text-muted">Imagem Pública | Patrocínio</p>
                         <ul class="list-inline social-buttons">
                             <li><a target="_blank" href="https://www.facebook.com/juliana.arbulu"><i class="fa fa-facebook"></i></a>
                             </li>
@@ -175,7 +143,7 @@
                     <div class="team-member">
                         <img src="img/team/gabi.jpg" class="img-responsive img-circle" alt="">
                         <h4>Gabriela Souza</h4>
-                        <p class="text-muted">Organização</p>
+                        <p class="text-muted">Tesoureira | Decoração</p>
                         <ul class="list-inline social-buttons">
                             <li><a target="_blank" href="https://www.facebook.com/gabriela.santos.5832343"><i class="fa fa-facebook"></i></a>
                             </li>
@@ -186,7 +154,7 @@
                     <div class="team-member">
                         <img src="img/team/flavia.jpg" class="img-responsive img-circle" alt="">
                         <h4>Flavia Albieri</h4>
-                        <p class="text-muted">Organização</p>
+                        <p class="text-muted">Secretária | Decoração</p>
                         <ul class="list-inline social-buttons">
                             <li><a target="_blank" href="https://www.facebook.com/flavia.albieri.7"><i class="fa fa-facebook"></i></a>
                             </li>
@@ -210,7 +178,7 @@
                     <div class="team-member">
                         <img src="img/team/cesar.jpg" class="img-responsive img-circle" alt="">
                         <h4>Cesar Dalava</h4>
-                        <p class="text-muted">Organização</p>
+                        <p class="text-muted">Patrocínio</p>
                         <ul class="list-inline social-buttons">
                             <li><a target="_blank" href="https://www.facebook.com/cesar.dalava"><i class="fa fa-facebook"></i></a>
                             </li>
@@ -221,9 +189,20 @@
                     <div class="team-member">
                         <img src="img/team/marrey.jpg" class="img-responsive img-circle" alt="">
                         <h4>Henrique Marrey</h4>
-                        <p class="text-muted">Organização</p>
+                        <p class="text-muted">Decoração | Patrocínio</p>
                         <ul class="list-inline social-buttons">
                             <li><a target="_blank" href="https://www.facebook.com/henrique.marrey"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/edu.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Eduardo Fernandes</h4>
+                        <p class="text-muted">TI</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a target="_blank" href="https://www.facebook.com/eduardo.fernandes.3386"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -257,6 +236,7 @@
                             var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
                             var marker = new google.maps.Marker({
                                 position: casa,
+                                //icon: 'img/teste.ico',
                                 map: map
                             });
                         }
@@ -326,12 +306,13 @@
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        //var texto = days + (days == 1 ? " Dia " : " Dias ");
-        //texto += hours + (hours == 1 ? " Hora " : " Horas ");
-        //texto += minutes + (minutes == 1 ? " Minuto " : " Minutos ");
-        //texto += seconds + (seconds == 1 ? " Segundo " : " Segundos ");
+        var texto = days + (days == 1 ? " dia " : " dias ");
+        texto += hours + (hours == 1 ? " hora " : " horas ");
+        texto += minutes + (minutes == 1 ? " minuto " : " minutos ");
+        texto += seconds + (seconds == 1 ? " segundo " : " segundos ");
 
-        var texto = days + "D " + hours + "H " + minutes + "M " + seconds + "S";
+        //var texto = days + "D " + hours + "H " + minutes + "M " + seconds + "S";
+        texto = "Faltam:<br>" + texto;
 
         document.getElementById('timer').innerHTML = texto;
 
@@ -352,12 +333,14 @@
                 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                //var texto = days + (days == 1 ? " Dia " : " Dias ");
-                //texto += hours + (hours == 1 ? " Hora " : " Horas ");
-                //texto += minutes + (minutes == 1 ? " Minuto " : " Minutos ");
-                //texto += seconds + (seconds == 1 ? " Segundo " : " Segundos ");
+                var texto = days + (days == 1 ? " dia " : " dias ");
+                texto += hours + (hours == 1 ? " hora " : " horas ");
+                texto += minutes + (minutes == 1 ? " minuto " : " minutos ");
+                texto += seconds + (seconds == 1 ? " segundo " : " segundos ");
 
-                var texto = days + "D " + hours + "H " + minutes + "M " + seconds + "S";
+                //var texto = days + "D " + hours + "H " + minutes + "M " + seconds + "S";
+
+                texto = "Faltam:<br>" + texto;
 
                 document.getElementById('timer').innerHTML = texto;
 
@@ -387,8 +370,12 @@
         ga('send', 'pageview');
     </script>
 
+
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+
+    <script src="vendor/parallax.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>

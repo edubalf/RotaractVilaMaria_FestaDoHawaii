@@ -9,7 +9,7 @@ body {
 }
 
 .text-muted {
-    color: @gray-light;
+    color: white;
 }
 
 .text-primary {
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-light-gray {
-    background-color: @gray-lighter;
+    background-color: @theme-primary;
 }
 
 .bg-darkest-gray {
@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 8px;
     font-size: 18px;
     padding: 20px 40px;
+}
+
+#btn-prancha:hover {
+     background-image: url('../img/prancha.png');
 }
 
 // Custom Navigation Bar
@@ -166,19 +170,29 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+#inscricao {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 25px;
+
+}
+
+#timer {
+    font-family: "antonio light";
+    color: @theme-primary;
+}
+
 header {
-    background-image: url('../img/hawaii.jpg');
+    background-image: url('../img/banner_site.png');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: 100% 100% !important;
-    height: 500px;
-    padding-top: 240px;
+    height: 300px;
+    padding-top: 80px;
     .background-cover;
     text-align: center;
     color: white;
-    #timer {
-        padding-top: 20px;
-    }
     .intro-text {
         padding-top: 60px;
         padding-bottom: 50px;
@@ -229,9 +243,11 @@ header {
 section {
     padding: 100px 0;
     h2.section-heading {
+        font-family: "avefedancustom";
         font-size: 40px;
         margin-top: 0;
         margin-bottom: 15px;
+        color: white;
     }
     h3.section-subheading {
         font-size: 16px;
@@ -524,13 +540,16 @@ aside.clients {
 
 
 section#map {
-    background-color: @gray-darker;
+    background-color: white;
     background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: @theme-primary;
     .text-muted {
-        color: lightgray;
+        color: @theme-primary;
+    }
+    .section-heading {
+        color: @theme-primary;
     }
 }
 
@@ -706,6 +725,13 @@ body {
 
 @media only screen and (max-width: 480px) {
     body {
-        padding-top: 40px;
+        padding-top: 50px;
+    }
+    #btn-prancha {
+        width: 300px;
     }
 }
+
+#btn-prancha {
+        height: 200px;
+    }
